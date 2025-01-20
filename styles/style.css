@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* share styles */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .display-flex{
+    display: flex;
+  }
+  .blue-font{
+    color: rgb(1, 172, 253);
+  }
+  .yellow-font{
+    color: rgb(254, 163, 1);
+  }
+  .yellow-bg{
+    background: rgb(254, 163, 1);
+  }
+  .black-bg{
+    background: rgb(17, 17, 17);
+  }
+ .btn-primary{
+    width: 190px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 12px;
+    border: none;
+ }
+
+  /* navbar styles */
+  header{
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 18px;
+  }
+  .logo{
+    align-items: center;
+    
+  }
+  .logo-img{
+    width: 50px;
+    height: 50px;
+  }
+  .logo-title{
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .menu{
+    flex-direction: row;
+    gap: 10px;
+  }
+  .nav-list{
+    list-style: none;
+  }
+  .nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-right: 32px;
+  }
+.menu-icon-container{
+  flex-direction: column;
+  gap: 5px;
+}
+.menu-icon{
+  border: 1px solid rgb(17, 17, 17);
+  width: 20px;
+  display: none;
+}
+
+.line{
+  border: 0.5px solid rgb(254, 163, 1);
+  width: 1150px;
+  display: none;
+}
+
+/* banner styles */
+.banner{
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.banner-info{
+  width: 650px;
+}
+.banner-title{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.banner-description{
+  font-size: 1.25rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+
+
+/* responsive media query styles */
+
+@media screen and (max-width: 576px) {
+
+  body{
+    margin: 10px;
+  }
+
+  /* navbar styles  */
+
+  .menu-icon,
+  .line
+  {
+    display: block;
+  }
+  .menu-icon-container{
+      margin-left: 550px;
+  }
+  .nav-list,
+  .nav-btn,
+  .logo-title
+  {
+    display: none;
+  }
+
+  /* banner styles  */
+  .banner{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+}
